@@ -74,6 +74,7 @@ function nasaRequest() {
  
  // Datepicker init
  const datePicker = document.getElementById("date-picker");
+ var button = document.getElementById("button");
  // Call nasaRequest on date change
  datePicker.addEventListener("dateChange.mdb.datepicker", (e) => {
    nasaRequest();
