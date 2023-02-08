@@ -3,7 +3,7 @@ export default function skyWindow () {
     return (
         <div>
             Sky Window API test #1: <br/>
-            <iframe src='http://server1.sky-map.org/skywindow?object=M100&zoom=8&img_source=SDSS' width={500} height={500}>
+            <iframe src='http://server1.sky-map.org/skywindow?object=M100&zoom=8&img_source=SDSS' width={500} height={500} >
             </iframe>
             <br/>
 
@@ -26,7 +26,7 @@ export default function skyWindow () {
                 </tr>
                 <tr>
                     <td>
-                        <iframe SRC="http://server1.sky-map.org/skywindow?ra=00 42 32&de=41 19 53&zoom=4" width={400} height={320}>
+                        <iframe src="http://server1.sky-map.org/skywindow?ra=004232&de=411953&zoom=4" width={400} height={320}>
                         </iframe>
                     </td>
                 </tr>

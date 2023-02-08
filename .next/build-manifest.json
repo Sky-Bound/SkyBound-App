@@ -25,10 +25,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/skywindowTEST": [
+    "/moonphaseTEST": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/skywindowTEST.js"
+      "static/chunks/pages/moonphaseTEST.js"
     ]
   },
   "ampFirstPages": []
