@@ -1,9 +1,14 @@
 import Head from 'next/head'
 import Image from 'next/image'
+
 import styles from '../styles/Home.module.css'
 import Menu from '../components/Menu/Menu'
 import HomeButton from '../components/Menu/HomeButton'
 import Weather from '../components/WeatherAPI/weather'
+import DateInput from '../components/NASA-POTD-API/DateInput'
+import Photo from '../components/NASA-POTD-API/Photo'
+import POTD from '../components/NASA-POTD-API/potd'
+import Text from '../components/AppText/Text'
 
 export default function Space() {
   return (
@@ -17,6 +22,16 @@ export default function Space() {
       <main className={styles.main}>
         <HomeButton />
         <Weather />
+
+        <div className={styles.content}>
+          <Text txt='Astronomy Picture of the Day' size='20px'/>
+          <Text font="Montserrat" txt='Every day NASA features a photograph from our facinating universe. Each image has a description written by a professional astronomer to learn more. '/>
+          <Text font="Montserrat" txt='Select a date, submit and discover the featured picture for your selected date!'/>
+          <POTD/>
+        </div>
+        {/* <DateInput/> */}
+        {/* NOT WORKING <Photo/> */}
+        
         <Menu />
       </main>
     </div>

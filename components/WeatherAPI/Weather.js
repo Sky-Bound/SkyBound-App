@@ -28,7 +28,7 @@ export default function Weather() {
         <link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
       </Head>
       <BorderBox>
-        <Text txt={weatherData.main?.temp} size="40px" weight="400" font="Gelasio"/>
+        <Text txt={weatherData.main?.temp.toFixed(0)} size="40px" weight="400" font="Gelasio"/>
         <Text txt="°" size="30px" weight="400" font="Gelasio"/>
       </BorderBox>
     </>

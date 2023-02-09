@@ -3,6 +3,8 @@ import styles from '../styles/Home.module.css'
 import Menu from '../components/Menu/Menu'
 import HomeButton from '../components/Menu/HomeButton'
 import Weather from '../components/WeatherAPI/weather'
+import LeftBox from '../components/ContentBoxes/LeftBox'
+import RightBox from '../components/ContentBoxes/RightBox'
 
 export default function Planets() {
   return (
@@ -16,6 +18,10 @@ export default function Planets() {
       <main className={styles.main}>
         <HomeButton />
         <Weather />
+
+        <LeftBox/>
+        <RightBox/>
+
         <Menu />
       </main>
     </div>
