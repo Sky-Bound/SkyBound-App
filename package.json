@@ -9,10 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+<<<<<<< HEAD
+=======
+    "@mui/material": "^5.11.8",
+    "@mui/styled-engine-sc": "^5.11.0",
+    "@next/font": "^13.1.6",
+>>>>>>> 8dd8a4824c2bfb13ffe050cc4c16f8d7e5d2a24c
     "axios": "^1.2.3",
     "next": "13.1.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
     "eslint": "8.32.0",
