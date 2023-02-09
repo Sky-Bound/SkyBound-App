@@ -2,5 +2,9 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/potd": "pages/potd.js"
+  "/": "pages/index.js",
+  "/planets": "pages/planets.js",
+  "/moon": "pages/moon.js",
+  "/stars": "pages/stars.js",
+  "/space": "pages/space.js"
 }
