@@ -15,11 +15,6 @@
   ],
   "rootMainFiles": [],
   "pages": {
-    "/": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/index.js"
-    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -30,6 +25,12 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
+<<<<<<< HEAD
+    "/moonphaseTEST": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/moonphaseTEST.js"
+=======
     "/moon": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -49,6 +50,7 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/stars.js"
+>>>>>>> 8dd8a4824c2bfb13ffe050cc4c16f8d7e5d2a24c
     ]
   },
   "ampFirstPages": []
