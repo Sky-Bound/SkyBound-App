@@ -9,10 +9,12 @@ export default function WeatherHome() {
 
   const CITY_NAME = "Burnaby";
   const API_KEY = "da099f872aba6423e0b2426fadaa778b";
+  var units = "metric";
+
 
   useEffect(() => {
     const fetchWeatherData = async () => {
-      const res = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${CITY_NAME}&appid=${API_KEY}`);
+      const res = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${CITY_NAME}&units=${units}&appid=${API_KEY}`);
       const data = await res.json();
       setWeatherData(data);
     };
@@ -28,10 +30,7 @@ export default function WeatherHome() {
         <link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
       </Head>
       <Box>
-        <Row>
-            <Text txt={weatherData.main?.temp} size="80px" weight="400" font="Gelasio"/>
-            <Text txt="°" size="70px" weight="400" font="Gelasio"/>
-        </Row>
+        <Text txt={weatherData.main?.temp.toFixed()} character="°" size="100px" weight="400" font="Gelasio"/> 
         <Text txt={weatherData.weather?.[0].description} size="35px" weight="400"/>
         <Text txt={new Date(weatherData.dt * 1000).toLocaleString()} size="20px" weight="400"/>
       </Box>
@@ -44,12 +43,12 @@ const Box = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+
 `;
 
-const Row = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-`;
+// const Row = styled.div`
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//     align-items: center;
+// `;

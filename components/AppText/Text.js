@@ -3,6 +3,7 @@ import styled from "styled-components"
 
 export default function Text({
   txt='SkyBound',
+  character='',
   size='64x',
   weight='500',
   color= '#F0F0F0',
@@ -19,7 +20,7 @@ export default function Text({
         <link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
       </Head>
       <TxtCont size={size} weight={weight} color={color} align={align} font={font}>
-          {txt}
+          {txt}{character}
       </TxtCont>
     </>  
   )
