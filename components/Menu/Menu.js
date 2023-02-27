@@ -91,6 +91,7 @@ export default function Menu({
   const BackgroundBox = styled.div`
     display: flex;
     justify-content: center;
+    align-items: center;
     background-image: url(gradient.png);
     background-size: cover;
     background-position: center;
@@ -104,6 +105,8 @@ export default function Menu({
 
   const MenuBox = styled.div`
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
     gap: 30px;
     position: fixed;

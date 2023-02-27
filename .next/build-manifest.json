@@ -25,32 +25,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-<<<<<<< HEAD
-    "/moonphaseTEST": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/moonphaseTEST.js"
-=======
-    "/moon": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/moon.js"
-    ],
     "/planets": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/planets.js"
-    ],
-    "/space": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/space.js"
-    ],
-    "/stars": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/stars.js"
->>>>>>> 8dd8a4824c2bfb13ffe050cc4c16f8d7e5d2a24c
     ]
   },
   "ampFirstPages": []

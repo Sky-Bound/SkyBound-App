@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import DateInput from "./DateInput"; 
 import Photo from "./Photo";
+import Text from "../AppText/Text";
+import { title } from "process";
 
 class POTD extends Component {
   state = {
     date: "",
-    photo: ""
+    photo: "",
   };
 
   changeDate = e => {
