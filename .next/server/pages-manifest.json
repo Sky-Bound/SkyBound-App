@@ -2,9 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/stars": "pages/stars.js",
-  "/moon": "pages/moon.js",
-  "/space": "pages/space.js",
   "/planets": "pages/planets.js"
 }
