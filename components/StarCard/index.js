@@ -8,6 +8,7 @@ export const Container = styled.div
         justify-content:center;
         align-items: center;
         flex-direction: column;
+        font-family: Montserrat;
         border-radius: 10px;
         width: 300px;
         box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
