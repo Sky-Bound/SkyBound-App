@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css'
 import Menu from '../components/Menu/Menu'
 import HomeButton from '../components/Menu/HomeButton'
 import Weather from '../components/WeatherAPI/weather'
+import StarCard from '../components/StarCard'
 
 export default function Stars() {
   return (
@@ -17,7 +18,8 @@ export default function Stars() {
       <main className={styles.main}>
         <HomeButton />
         <Weather />
-        <Menu />
+        <StarCard/>
+        {/* <Menu /> */}
       </main>
     </div>
   )
