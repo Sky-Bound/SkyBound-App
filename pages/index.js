@@ -10,6 +10,7 @@ import RightBox from '../components/ContentBoxes/RightBox'
 import POTD from '../components/NASA-POTD-API/potd'
 import WeatherHome from '../components/WeatherAPI/WeatherHome'
 import Weather from '../components/WeatherAPI/Weather'
+import Widget from '../components/Widget'
 
 export default function Home () {
   return(
@@ -28,10 +29,17 @@ export default function Home () {
         <WeatherHome />
         
         <div>
-          <Text txt="Sky Bound" weight="500" size="80px" />
+          <Text txt="Sky Bound" weight="500" size="80px" padding='10px' />
         </div>
 
-        <Menu />
+        <div className={styles.grid}>
+        <Widget src='/star.png' txt='Star'/>
+        <Widget src='/telescope.png' txt='Space'/>
+        <Widget src='/planet.png' txt='Planets'/>
+        </div>
+
+
+        {/* <Menu /> */}
       </main>
     </div>
   )
