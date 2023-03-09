@@ -33,9 +33,9 @@ export default function Home () {
         </div>
 
         <div className={styles.grid}>
-        <Widget src='/star.png' txt='Star'/>
-        <Widget src='/telescope.png' txt='Space'/>
-        <Widget src='/planet.png' txt='Planets'/>
+        <Widget icon='/star.png' txt='Star' to='/stars'/>
+        <Widget icon='/telescope.png' txt='Space' to='/space'/>
+        <Widget icon='/planet.png' txt='Planets' to='/planets'/>
         </div>
 
 

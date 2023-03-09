@@ -2,8 +2,9 @@ import styled from 'styled-components';
 import Image from 'next/image';
 import Head from 'next/head';
 import Text from '../AppText/Text';
+import Link from 'next/link';
 
-export const Container = styled.div
+export const Container = styled(Link)
 `
         display:flex;
         justify-content:center;
@@ -18,6 +19,7 @@ export const Container = styled.div
         margin: 15px;
         padding: 15px;
         color: #f5f5f5f5;
+        border: none;
 
         &:hover {
             transform: scale(1.05); 
@@ -33,13 +35,14 @@ export const Icon = styled(Image)
 
 export default function Widget({
     txt = "Name here",
-    src = "/placerphoto.jpg"
+    icon = "/placerphoto.jpg",
+    to = "/index"
 
 }) {
 
     return (
-        <Container>
-            <Icon  src={src} width={50} height={50}/>
+        <Container href={to}>
+            <Icon  src={icon} width={50} height={50}/>
             <div>{txt}</div>
         </Container>
     )
