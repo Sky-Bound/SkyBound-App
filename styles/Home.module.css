@@ -1,6 +1,9 @@
 .container {
   min-height: 100vh;
   padding: 0 2rem;
+  background-image: url("/testbg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main {
@@ -12,8 +15,6 @@
   align-items: center;
   
 }
-
-
 .footer {
   display: flex;
   flex: 1;
@@ -72,7 +73,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
+  max-width: 1000px;
 }
 
 .card {

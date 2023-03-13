@@ -4,8 +4,15 @@ import styles from '../styles/Home.module.css'
 import Menu from '../components/Menu/Menu'
 import HomeButton from '../components/Menu/HomeButton'
 import Weather from '../components/WeatherAPI/weather'
+import StarCard from '../components/StarCard'
+import record from '../database/constellations.json'
+
+
 
 export default function Stars() {
+
+  console.log(record);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -17,6 +24,24 @@ export default function Stars() {
       <main className={styles.main}>
         <HomeButton />
         <Weather />
+        <div className={styles.grid}>
+        {
+            record.map( (rec, index) => {
+              return(
+                <div key={index}>
+                  <StarCard 
+                  src={rec.Image}
+                  name={rec.Constellation}
+                  genitive={rec.Genitive}
+                  meaning={rec.Meaning}
+                  star={rec['Brightest star']}
+                  />
+                  
+                </div>
+              )
+            })
+          }
+        </div>
         <Menu />
       </main>
     </div>
