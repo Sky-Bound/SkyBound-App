@@ -8,7 +8,8 @@ export default function Text({
   weight='500',
   color= '#F0F0F0',
   align='left',
-  font= 'Advent Pro'
+  font= 'Advent Pro',
+  padding='0px'
 }){
 
   return (
@@ -21,7 +22,7 @@ export default function Text({
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"></link>
       </Head>
-      <TxtCont size={size} weight={weight} color={color} align={align} font={font}>
+      <TxtCont size={size} weight={weight} color={color} align={align} font={font} padding={padding}>
           {txt}{character}
       </TxtCont>
     </>  
@@ -29,7 +30,7 @@ export default function Text({
 }
 
 const TxtCont = styled.div`
-padding: 10px;
+padding: ${props=>props.padding};
 justify-content: center;
 align-items: center;
 justify-self: center;
