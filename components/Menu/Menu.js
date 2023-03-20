@@ -33,31 +33,21 @@ export default function Menu({
         switch (currentPage) {
           case '/planets':
             planets = '/planet.png';
-            moon = '/moonfilled.png';
-            stars = '/starfilled.png';
-            telescope = '/telescopefilled.png';
-            break;
-          case '/moon':
-            planets = '/planetfilled.png';
-            moon = '/moon.png';
             stars = '/starfilled.png';
             telescope = '/telescopefilled.png';
             break;
           case '/stars':
             planets = '/planetfilled.png';
-            moon = '/moonfilled.png';
             stars = '/star.png';
             telescope = '/telescopefilled.png';
             break;
           case '/space':
             planets = '/planetfilled.png';
-            moon = '/moonfilled.png';
             stars = '/starfilled.png';
             telescope = '/telescope.png';
             break;
           default:
             planets = '/planetfilled.png';
-            moon = '/moonfilled.png';
             stars = '/starfilled.png';
             telescope = '/telescopefilled.png';
         }      
@@ -69,10 +59,6 @@ export default function Menu({
                     <IconBox onClick={Planets}>
                         <Image src={planets} width="50" height="50" /> 
                         <Text txt="Planets" size="16px" weight="600" />
-                    </IconBox>
-                    <IconBox onClick={Moon}>
-                        <Image src={moon} width="50" height="50" /> 
-                        <Text txt="Moon" size="16px" align="center" weight="600"/>
                     </IconBox>
                     <IconBox onClick={Stars}>
                         <Image src={stars} width="50" height="50" /> 
@@ -93,6 +79,7 @@ export default function Menu({
     justify-content: center;
     align-items: center;
     background-image: url(gradient.png);
+    background-color: rgba(0, 0, 0, 0.8);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -108,7 +95,7 @@ export default function Menu({
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: 30px;
+    gap: 50px;
     position: fixed;
     bottom: 0;
     padding: 1rem;
