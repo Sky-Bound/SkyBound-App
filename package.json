@@ -2,6 +2,8 @@
   "name": "skybound",
   "version": "0.1.0",
   "private": true,
+  "license": "INSERT LICENSE NAME HERE",
+
   "scripts": {
     "dev": "next dev",
     "build": "next build",
