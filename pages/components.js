@@ -8,7 +8,7 @@ import Text from '../components/AppText/Text'
 import Menu from '../components/Menu/Menu'
 import LeftBox from '../components/ContentBoxes/LeftBox'
 import RightBox from '../components/ContentBoxes/RightBox'
-import POTD from '../components/NASA-POTD-API/potd'
+import POTD from '../components/NASA-POTD-API/Potd'
 import WeatherHome from '../components/WeatherAPI/WeatherHome'
 
 export default function Home() {
