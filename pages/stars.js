@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Menu from '../components/Menu/Menu'
 import HomeButton from '../components/Menu/HomeButton'
-import Weather from '../components/WeatherAPI/weather'
+import Weather from '../components/WeatherAPI/Weather'
 import StarCard from '../components/StarCard'
 import record from '../database/constellations.json'
 
