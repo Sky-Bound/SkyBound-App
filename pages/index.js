@@ -25,7 +25,6 @@ export default function Home () {
       </Head>
 
       <main className={styles.main}>
-
         <WeatherHome />
         
         <div>
@@ -37,7 +36,6 @@ export default function Home () {
         <Widget icon='/telescope.png' txt='Space' to='/space'/>
         <Widget icon='/planet.png' txt='Planets' to='/planets'/>
         </div>
-
 
         {/* <Menu /> */}
       </main>

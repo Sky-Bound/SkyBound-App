@@ -30,11 +30,14 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
+<<<<<<< HEAD
     "/planets": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/planets.js"
     ],
+=======
+>>>>>>> 287b46caeb078f947de8b51e899eb1317bf27c9e
     "/stars": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
