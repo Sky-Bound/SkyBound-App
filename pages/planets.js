@@ -51,22 +51,27 @@ export default function Planets() {
 
         {
           planets && planets.map((d) => {
+            if (d.id % 1 === 0) {
             return (
               <div key={d.div}>
                 <LeftBox 
                   title={d.name} size="30px"
                   descp={d.description} dSize="15px"
                   src={d.imgSrc[0].img} />
+              </div> )
+
+            } else {
+              return (
+              <div key={d.div}>
                 <RightBox 
                   title={d.name} size="30px"
                   descp={d.description} dSize="15px"
                   src={d.imgSrc[0].img} />
               </div>
-            )
+              )
+            }
           })
         }
-
-
 
         <Menu />
       </main>
