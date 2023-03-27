@@ -3,7 +3,6 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
-  "/planets": "pages/planets.js",
-  "/space": "pages/space.js",
+  "/moon": "pages/moon.js",
   "/stars": "pages/stars.js"
 }

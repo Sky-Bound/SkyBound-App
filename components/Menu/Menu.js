@@ -35,21 +35,31 @@ export default function Menu({
             planets = '/planetglow.svg';
             stars = '/star.svg';
             space = '/space.svg';
+            moon = '/moon.svg';
             break;
           case '/stars':
             planets = '/planet.svg';
             stars = '/starglow.svg';
             space = '/space.svg';
+            moon = '/moon.svg';
+            break;
+          case '/moon':
+            planets = '/planet.svg';
+            stars = '/star.svg';
+            space = '/space.svg';
+            moon = '/moonglow.svg';
             break;
           case '/space':
             planets = '/planet.svg';
             stars = '/star.svg';
             space = '/spaceglow.svg';
+            moon = '/moon.svg';
             break;
           default:
             planets = '/planetglow.svg';
             stars = '/starglow.svg';
             space = '/spaceglow.svg';
+            moon = '/moonglow.svg';
         }      
       
         return (
@@ -63,7 +73,11 @@ export default function Menu({
                     <IconBox onClick={Stars}>
                         <Image src={stars} width="50" height="50" /> 
                         <Text txt="Stars" size="16px" align="center" weight="600"/>
-                    </IconBox>    
+                    </IconBox>
+                    <IconBox onClick={Moon}>
+                        <Image src={moon} width="50" height="50" /> 
+                        <Text txt="Moon" size="16px" align="center" weight="600"/>
+                    </IconBox>      
                     <IconBox onClick={Space}>
                         <Image src={space} width="50" height="50" /> 
                         <Text txt="Space" size="16px" align="center" weight="600"/>
