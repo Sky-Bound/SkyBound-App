@@ -30,10 +30,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/planets": [
+    "/space": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/planets.js"
+      "static/chunks/pages/space.js"
     ],
     "/stars": [
       "static/chunks/webpack.js",
