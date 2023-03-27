@@ -79,7 +79,7 @@ export default function Menu({
     justify-content: center;
     align-items: center;
     background-image: url(gradient.png);
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
