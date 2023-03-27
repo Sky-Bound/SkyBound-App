@@ -24,15 +24,10 @@ export default function WeatherHome() {
 
   return (
     <>
-      <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
-        <link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
-      </Head>
       <Box>
-        <Text txt={weatherData.main?.temp.toFixed()} character="°" size="100px" weight="400" font="Gelasio" padding='0px'/> 
+        <Text txt={weatherData.main?.temp.toFixed()} character="°" size="100px" weight="400" padding='0px'/> 
         <Text txt={weatherData.weather?.[0].description} size="35px" weight="400"/>
-        <Text txt={new Date(weatherData.dt * 1000).toLocaleString()} size="20px" weight="400"/>
+        {/* <Text txt={new Date(weatherData.dt * 1000).toLocaleString()} size="20px" weight="400"/> */}
       </Box>
     </>
   )

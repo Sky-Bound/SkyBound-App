@@ -8,20 +8,12 @@ export default function Text({
   weight='500',
   color= '#F0F0F0',
   align='left',
-  font= 'Advent Pro',
+  font= '',
   padding='0px'
 }){
 
   return (
     <>
-      <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
-        <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
-        <link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"></link>
-      </Head>
       <TxtCont size={size} weight={weight} color={color} align={align} font={font} padding={padding}>
           {txt}{character}
       </TxtCont>

@@ -21,7 +21,7 @@ export default function Menu({
         const Stars = () => {
             r.push("/stars");
         }
-        const Telescope = () => {
+        const Space = () => {
             r.push("/space");
         }
       
@@ -29,27 +29,27 @@ export default function Menu({
           setCurrentPage(router.pathname);
         }, [router.pathname]);
       
-        let planets, moon, stars, telescope;
+        let planets, moon, stars, space;
         switch (currentPage) {
           case '/planets':
-            planets = '/planet.png';
-            stars = '/starfilled.png';
-            telescope = '/telescopefilled.png';
+            planets = '/planetglow.svg';
+            stars = '/star.svg';
+            space = '/space.svg';
             break;
           case '/stars':
-            planets = '/planetfilled.png';
-            stars = '/star.png';
-            telescope = '/telescopefilled.png';
+            planets = '/planet.svg';
+            stars = '/starglow.svg';
+            space = '/space.svg';
             break;
           case '/space':
-            planets = '/planetfilled.png';
-            stars = '/starfilled.png';
-            telescope = '/telescope.png';
+            planets = '/planet.svg';
+            stars = '/star.svg';
+            space = '/spaceglow.svg';
             break;
           default:
-            planets = '/planetfilled.png';
-            stars = '/starfilled.png';
-            telescope = '/telescopefilled.png';
+            planets = '/planetglow.svg';
+            stars = '/starglow.svg';
+            space = '/spaceglow.svg';
         }      
       
         return (
@@ -64,8 +64,8 @@ export default function Menu({
                         <Image src={stars} width="50" height="50" /> 
                         <Text txt="Stars" size="16px" align="center" weight="600"/>
                     </IconBox>    
-                    <IconBox onClick={Telescope}>
-                        <Image src={telescope} width="50" height="50" /> 
+                    <IconBox onClick={Space}>
+                        <Image src={space} width="50" height="50" /> 
                         <Text txt="Space" size="16px" align="center" weight="600"/>
                     </IconBox>
                 </MenuBox>

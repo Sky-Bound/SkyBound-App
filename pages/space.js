@@ -26,9 +26,9 @@ export default function Space() {
         <Weather />
 
         <div className={styles.content}>
-          <Text txt='Astronomy Picture of the Day' size='20px'/>
-          <Text font="Montserrat" txt='Every day NASA features a photograph from our facinating universe. Each image has a description written by a professional astronomer to learn more. '/>
-          <Text font="Montserrat" txt='Select a date, submit and discover the featured picture for your selected date!'/>
+          <Text txt="Astronomy Picture of the Day𓇻" font="Astro" weight="500" size="60px"/> <br/><br/>
+          <Text txt='Every day NASA features a photograph from our facinating universe. Each image has a description written by a professional astronomer to learn more. '/> <br/>
+          <Text txt='Select a date, submit and discover the featured picture for your selected date!'/>
           <POTD/>
         </div>
         {/* <DateInput/> */}

@@ -60,7 +60,7 @@ export default function Home() {
         <Menu />
         <WeatherHome />
         <LeftBox src="/star.png" />
-        <RightBox src="/telescope.png"/>
+        <RightBox src="/space.svg"/>
         <POTD />
       </main>
       </main>

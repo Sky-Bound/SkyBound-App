@@ -33,7 +33,8 @@ export const Wrapper = styled.div
 export const Name = styled.h1
 `
     margin: 0px;
-    font-family: Advent Pro;
+    font-family: Montserrat;
+    font-size: 22px;
 `
 export const Latin = styled.h2
 `
@@ -41,12 +42,12 @@ export const Latin = styled.h2
     font-size: 14px;
     font-weight: 400;
     margin: 0px;
-    padding-bottom: 10px;
 `
 export const Descp = styled.p
 `
-margin: 3px;
-font-size: 14px;
+    margin: 3px;
+    font-size: 14px;
+    padding-bottom: 10px;
 `
 
 
@@ -61,24 +62,25 @@ export default function StarCard({
     name = "Name here",
     genitive = "latin name",
     meaning = "blah blah blah",
+    origin= "blah blah blah",
     star = "blah blah blah",
-    src = "/placerphoto.jpg"
+    src = "/placerphoto.jpg",
+    show = true,
 
 }) {
 
+    if (!show) {
+        return null;
+      }
+
     return (
-        <Container>
-            <Head>
-                <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
-                <link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"></link>
-            </Head>
+        <Container show={show}>
             <Constellation src={src} width={200} height={150}/>
             <Wrapper>
                 <Name>{name}</Name>
                 <Latin>{genitive}</Latin>
                 <Descp>"{meaning}"</Descp>
+                <Descp><strong>Origin: </strong>{origin}</Descp>
                 <Descp><strong>Brightest Star: </strong>{star}</Descp>
             </Wrapper>
         </Container>
