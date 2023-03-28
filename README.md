@@ -1,5 +1,5 @@
 ## Check out [SkyBound](https://skyboundapp.vercel.app/)!! 💫
---
+Deployed by Vercel
 ## Data Used
 #### [Nasa Potd API implementation](https://github.com/OpenGenus/nasa-api/tree/master/src)
 #### [Weather API](https://openweathermap.org/current)
