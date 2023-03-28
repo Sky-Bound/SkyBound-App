@@ -74,14 +74,14 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-padding: 0.75rem;
+padding: 1.75rem;
 gap: 2rem;
 `;
 
 const Box = styled.div`
 display: flex;
 flex-direction: column;
-width: 500px;
+max-width: 500px;
 `;
 
 const Icon = styled(Image)`

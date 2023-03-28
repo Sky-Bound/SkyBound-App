@@ -12,7 +12,7 @@ export default function Weather() {
 
   useEffect(() => {
     const fetchWeatherData = async () => {
-      const res = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${CITY_NAME}&units=${units}&appid=${API_KEY}`);
+      const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${CITY_NAME}&units=${units}&appid=${API_KEY}`);
       const data = await res.json();
       setWeatherData(data);
     };
