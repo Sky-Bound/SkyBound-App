@@ -1,4 +1,4 @@
-### Check out [SkyBound] (https://skyboundapp.vercel.app/)!! 💫
+### Check out [SkyBound](https://skyboundapp.vercel.app/)!! 💫
 
 ## Data Used
 #### [Nasa Potd API implementation](https://github.com/OpenGenus/nasa-api/tree/master/src)
