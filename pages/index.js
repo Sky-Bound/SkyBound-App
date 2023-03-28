@@ -15,7 +15,7 @@ import Widget from '../components/Widget'
 export default function Home () {
   return(
     <div className={styles.container}>
-    <div className={styles.skyAnimation}>
+    {/* <div className={styles.skyAnimation}> */}
 
       <Head>
         <title>Skybound</title>
@@ -41,6 +41,6 @@ export default function Home () {
         {/* <Menu /> */}
       </main>
     </div>
-    </div>
+    // </div>
   )
 }
