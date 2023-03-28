@@ -5,7 +5,9 @@ import HomeButton from '../components/Menu/HomeButton'
 import Weather from '../components/WeatherAPI/Weather'
 import LeftBox from '../components/ContentBoxes/LeftBox'
 import RightBox from '../components/ContentBoxes/RightBox'
+import Text from '../components/AppText/Text'
 import Image from 'next/image'
+import Planet from '../components/Planet'
 import { useEffect, useState } from 'react'
 
 
@@ -49,26 +51,26 @@ export default function Planets() {
         <HomeButton />
         <Weather />
 
+        <Text txt="The Planets𓇻" font="Astro" weight="500" size="80px"  />
+        <Text txt='Learn about the eight planets in our Solar System'/>
+
+        <div className={styles.grid}>
         {
           planets && planets.map((d) => {
             return (
               <div key={d.div}>
-                <LeftBox 
-                  title={d.name} size="30px"
-                  descp={d.description} dSize="15px"
-                  src={d.imgSrc[0].img} />
-                <RightBox 
-                  title={d.name} size="30px"
-                  descp={d.description} dSize="15px"
-                  src={d.imgSrc[0].img} />
+                <Planet 
+                  name={d.name}
+                  descp={d.description}
+                  src={d.imgSrc[0].img}/>
               </div>
             )
           })
         }
-
-
+        </div>
 
         <Menu />
+
       </main>
     </div>
     </div>
