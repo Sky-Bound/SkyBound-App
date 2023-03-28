@@ -102,6 +102,7 @@ export default function Menu({
     height: 110px;
     width: 100vw;
     border-radius: 50px 50px 0px 0px;
+    z-index: 101;
 `;
 
   const MenuBox = styled.div`

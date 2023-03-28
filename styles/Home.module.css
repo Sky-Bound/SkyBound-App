@@ -339,6 +339,7 @@
   flex-wrap: wrap;
   max-width: 1000px;
   padding-bottom: 100px;
+  z-index: 100;
 }
 
 .card {
@@ -457,3 +458,5 @@
   background-color: #b41173;
   border: none;
 }
+
+
