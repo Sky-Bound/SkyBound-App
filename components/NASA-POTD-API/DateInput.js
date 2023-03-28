@@ -7,7 +7,7 @@ const DateInput = props => (
   <Center>
     <form onSubmit={props.changeDate}>
       <Center>
-        <Text txt="Select a date:" size="20px" weight="600" color="#0F1C3F" align="center"/>
+        <Text txt="Select a date:" size="20px" weight="600" align="center"/>
       </Center>
         <Row>
           <input className={styles.date} type="date"/>

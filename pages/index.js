@@ -34,7 +34,7 @@ export default function Home () {
         <div className={styles.grid}>
         <Widget icon='/star.svg' txt='Stars' to='/stars'/>
         <Widget icon='/space.svg' txt='Space' to='/space'/>
-        <Widget icon='/moon.svg' txt='Moon' to='/moon'/>
+        {/* <Widget icon='/moon.svg' txt='Moon' to='/moon'/> */}
         <Widget icon='/planet.svg' txt='Planets' to='/planets'/>
         </div>
 

@@ -61,19 +61,6 @@
   /* animation: Animate 15s ease infinite; */
 }
 
-.spacefog {
-  background-image: url("/spacefog.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.spacebg {
-  background-image: url("/whitestars.png");
-  width: 100vw;
-}
-
-/* Other */
-
 /* Search Bar */
 
 .content > input {
@@ -87,6 +74,9 @@
   margin-bottom: 75px;
   padding: 5px;
 }
+
+
+/* Other */
 
 .main {
   padding: 4rem 0;

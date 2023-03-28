@@ -74,10 +74,10 @@ export default function Menu({
                         <Image src={stars} width="50" height="50" /> 
                         <Text txt="Stars" size="16px" align="center" weight="600"/>
                     </IconBox>
-                    <IconBox onClick={Moon}>
+                    {/* <IconBox onClick={Moon}>
                         <Image src={moon} width="50" height="50" /> 
                         <Text txt="Moon" size="16px" align="center" weight="600"/>
-                    </IconBox>      
+                    </IconBox>       */}
                     <IconBox onClick={Space}>
                         <Image src={space} width="50" height="50" /> 
                         <Text txt="Space" size="16px" align="center" weight="600"/>

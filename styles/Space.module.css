@@ -2,20 +2,19 @@
   
  .spacecontainer {
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: 300% 300%;
-    background-image: radial-gradient(
-    rgb(180, 102, 50) 10%, 
-    #372576 35%,
-    rgb(144, 79, 35) 60%,
-    #372576 85%
+    background-size: cover;
+    background: linear-gradient(
+      315deg, 
+    #172248 0%,
+    #2C2254 25%, 
+    #0F1C3F 50%,
+    #203b80 75%,
+    #2C2254 100%
   );  
   }
   
   .spacefog {
-    background-image: url("/spacefog.png");
+    background-image: url("/starfog.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
@@ -62,7 +61,7 @@
   .starrybg {
     background-image: url("/starry.png");
     background-repeat: repeat;
-    animation: stars 7s linear infinite;
+    animation: stars 10s linear infinite;
     position: absolute;
     top: 0;
     left: 0;

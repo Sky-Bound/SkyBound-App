@@ -7,7 +7,7 @@ import styles from '../../styles/Home.module.css'
 const Photo = props => (
     <Center>
         <img className={styles.img} src={props.photo.url} alt={props.photo.title} />
-        <Text txt={props.photo.title} size="24px" weight="500" color="#0F1C3F" align="center"/>
+        <Text txt={props.photo.title} size="24px" weight="600" align="center"/>
         <Text txt={props.photo.explanation} font="Montserrat"/>
     </Center>
   );
