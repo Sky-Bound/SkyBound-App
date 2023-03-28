@@ -10,12 +10,12 @@ Deployed by Vercel
 [Icons](https://www.flaticon.com/) from Flaticon
 
 ## Languages + Tools Used
- ■ HTML
- ■ CSS
- ■ JavaScript
- ■ Next.js 13
- ■ Axios
- ■ Styled Components
+ #■ HTML
+ #■ CSS
+ #■ JavaScript
+ #■ Next.js 13
+ #■ Axios
+ #■ Styled Components
 
 ## Installations and Commands
 #### ■ npm i
