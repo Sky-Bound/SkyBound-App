@@ -62,11 +62,7 @@ export default function Planets() {
                 <Planet 
                   name={d.name}
                   descp={d.description}
-                  src={d.imgSrc[0].img} />
-                <RightBox 
-                  title={d.name} size="30px"
-                  descp={d.description} dSize="15px"
-                  src={d.imgSrc[0].img} />
+                  src={d.imgSrc[0].img}/>
               </div>
             )
           })
