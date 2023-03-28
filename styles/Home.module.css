@@ -158,6 +158,8 @@
   flex-wrap: wrap;
   max-width: 1000px;
   padding-bottom: 100px;
+  z-index: 100;
+  padding-top: 25px;
 }
 
 .card {
@@ -276,3 +278,5 @@
   background-color: #b41173;
   border: none;
 }
+
+
