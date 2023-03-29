@@ -43,24 +43,6 @@
   100%{background-position:0% 50%}
 }
 
-/* Space Background */
-
-.spacecontainer {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: 300% 300%;
-  background-image: radial-gradient(
-    rgb(180, 102, 50) 10%, 
-    #372576 35%,
-    rgb(144, 79, 35) 60%,
-    #372576 85%
-    
-  );  
-  /* animation: Animate 15s ease infinite; */
-}
-
 /* Search Bar */
 
 .content > input {
@@ -259,8 +241,8 @@
   font-size: 14px;
   color: #F0F0F0;
   background-color: #0F1C3F;
-  padding: 10px;
-  border: 2px solid #0F1C3F;
+  padding: 8px;
+  border: 1px solid #F0F0F0;
   border-radius: 5px;
 }
 
