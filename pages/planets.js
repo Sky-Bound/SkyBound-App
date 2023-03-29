@@ -12,7 +12,7 @@ import { useEffect, useState } from 'react'
 
 
 export default function Planets() {
-  const [planets, setPlanets] = useState();
+  const [planets, setPlanets] = useState([]);
     const url = 'https://planets-info-by-newbapi.p.rapidapi.com/api/v1/planet/list';
 
     useEffect(() => {
@@ -68,8 +68,6 @@ export default function Planets() {
           })
         }
         </div>
-
-
 
         <Menu />
 

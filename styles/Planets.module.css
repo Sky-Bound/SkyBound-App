@@ -5,16 +5,16 @@
     background-size: cover;
     background: linear-gradient(
       315deg, 
-    #b41173 0%,
-    #2c1a72 25%, 
-    #0e546d 50%,
-    #1d3383 75%, 
-    #b41173 100%
-  );
+    #172248 0%,
+    #2C2254 25%, 
+    #0F1C3F 50%,
+    #203b80 75%,
+    #2C2254 100%
+    );
   }
   
   .planetsfog {
-    background-image: url("/pinkfog.png");
+    background-image: url("/starfog.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
@@ -60,7 +60,7 @@
     right: 0;
     bottom: 0;
     width: 100%;
-    height: 230vh;
+    height: 150vh;
   }
   
   @keyframes stars {

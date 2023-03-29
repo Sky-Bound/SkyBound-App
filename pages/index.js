@@ -15,7 +15,7 @@ import Widget from '../components/Widget'
 export default function Home () {
   return(
     <div className={styles.container}>
-    <div className={styles.skyAnimation}>
+    {/* <div className={styles.skyAnimation}> */}
 
       <Head>
         <title>Skybound</title>
@@ -34,13 +34,13 @@ export default function Home () {
         <div className={styles.grid}>
         <Widget icon='/star.svg' txt='Stars' to='/stars'/>
         <Widget icon='/space.svg' txt='Space' to='/space'/>
-        <Widget icon='/moon.svg' txt='Moon' to='/moon'/>
+        {/* <Widget icon='/moon.svg' txt='Moon' to='/moon'/> */}
         <Widget icon='/planet.svg' txt='Planets' to='/planets'/>
         </div>
 
         {/* <Menu /> */}
       </main>
     </div>
-    </div>
+    // </div>
   )
 }
