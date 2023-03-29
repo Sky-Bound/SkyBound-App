@@ -13,6 +13,7 @@ import { useEffect, useState } from 'react'
 
 export default function Planets() {
   const [planets, setPlanets] = useState([]);
+
     const url = 'https://planets-info-by-newbapi.p.rapidapi.com/api/v1/planet/list';
 
     useEffect(() => {
@@ -28,7 +29,8 @@ export default function Planets() {
         .then (response => response.json())
         .then (response =>{
             console.log(response);
-            setPlanets(response);
+            setPlanets(Array.isArray(response) ? response : []);
+
         })
         .catch(err => {
             console.log(err);
